@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="GitRepository"
+id="39906cbf-9c0a-4883-8758-e2fdd6bc841c"
+rxversion="8.2">
+  <codegen
+  classname="GitRepository"
+  namespace="Git"/>
+  <rootfolder
+  name="Root"
+  id="2db2e3cf-ae33-4f85-9911-4465830a702f"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

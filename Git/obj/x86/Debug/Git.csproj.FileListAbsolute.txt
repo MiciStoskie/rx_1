@@ -1,0 +1,9 @@
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Git.rxtmg
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Git.rxtst
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Git.exe.config
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Git.exe
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Git.pdb
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\obj\x86\Debug\Git.csprojResolveAssemblyReference.cache
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\obj\x86\Debug\Git.exe
+C:\Users\PC\Documents\Ranorex\RanorexStudio Projects\Git\Git\obj\x86\Debug\Git.pdb
