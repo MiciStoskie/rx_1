@@ -1,19 +1,89 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="GitRepository"
+﻿<repository
 id="39906cbf-9c0a-4883-8758-e2fdd6bc841c"
+name="GitRepository"
 rxversion="8.2">
-  <codegen
-  classname="GitRepository"
-  namespace="Git"/>
-  <rootfolder
-  name="Root"
-  id="2db2e3cf-ae33-4f85-9911-4465830a702f"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="GitRepository"
+	namespace="Git">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2db2e3cf-ae33-4f85-9911-4465830a702f"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="5420c6a4-98f3-4a83-a6ef-1ea496919ddb"
+		isrooted="True"
+		name="RanorexWebtestLogIn"
+		refpath="/dom[@domain='webtest.ranorex.org']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9948093a-f7c7-4634-bbfc-c4d07b947e34"
+			name="UserLogin"
+			refimgid="102806a6-240f-4a98-8674-dc74ad98fc2a"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'user_login']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'user_login']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2310ef81-b28a-4e7f-8ccb-3703cfb2c6d5"
+			name="UserPass"
+			refimgid="3aa19925-5ee2-417a-ae09-b15a642901d7"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'user_pass']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'user_pass']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="55a3c61f-6dc8-4a68-a992-df1c55821f9f"
+			name="WpSubmit"
+			refimgid="f6783039-49ab-4646-89c0-888781ca5069"
+			refpath="/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'wp-submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="6dde94e3-21ee-41ea-953c-c8dc6cd55498"
+			name="LogOut"
+			refimgid="0be64c3c-6ab1-4925-bbb8-2fd2d9ccd38d"
+			refpath="/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']
+			</item>
+			<basepath>
+				/dom[@domain='webtest.ranorex.org']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43T3UvTURjAcS/6G4Kgyy6KKKjwJogIDBJjIBWZ7MIh
+5cDKzDILZ0bmhduYaWq+kS4xo990aC/24qwkJUjmS7nV1JYoynRuvk739s3fr7zyLDrw8Ls45/mc
+5zwPv7i4v6uh9SO1LV1UNHVS+qiDkupW7pa3oDM8Jre4nqzCKjbPCr9y8r9WvsGsYDER+eZQOBrT
+kAHn+HRsxLRR9npQDIQjUWTgSPJFJeIT07dWIr95dW0rEI6gwCuBCAvLYdyekBiQG7YJeFfmqOpo
+p9zahs6SSamlEdfUAt6FEI6JgBiQGyTfICcbbHqGow7s0X6K7Nc4nCdxofIVQ24fA6PLYkAelX8p
+Qk27jfyvyTTMa6mxt6AxTnO8zMOexhOY2uv4PLIkBuQ5z/nD3HvQTZo1CfUbFVkmN9llcLC6kO2t
+OzlZcIWeIb8Y0N68z/R8iDsPXejKPpHWnILKVkSK0c+pzBvsuL2NoznpvOufFwOaHD2Ts0GqpBG0
+BlAbJA507CLemEzS+RfsVV1GX1PHyz6vGEi9VIx7Zh3nmI/rJYPsz6tld8E+EjKucijFymntU173
+zmDtmRUDZzIKcU2uKaOyO72Ympo5dq6AhNRyKsxvleS+b0tI7z1iQKW5hXNibaMPQSY864xNBXD8
+WlXG9uX78kbyIh8GF2MDiepceod9tHWP86zrJ086RzE//0G91Um1xUGl9CcqJJe4goSz2crG/8bm
+X/kbNG0rDiYbOAsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

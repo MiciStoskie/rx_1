@@ -27,6 +27,7 @@ namespace Git
     public partial class GitRepository : RepoGenBaseFolder
     {
         static GitRepository instance = new GitRepository();
+        GitRepositoryFolders.RanorexWebtestLogInAppFolder _ranorexwebtestlogin;
 
         /// <summary>
         /// Gets the singleton class instance representing the GitRepository element repository.
@@ -43,6 +44,7 @@ namespace Git
         public GitRepository() 
             : base("GitRepository", "/", null, 0, false, "2db2e3cf-ae33-4f85-9911-4465830a702f", ".\\RepositoryImages\\GitRepository2db2e3cf.rximgres")
         {
+            _ranorexwebtestlogin = new GitRepositoryFolders.RanorexWebtestLogInAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace Git
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The RanorexWebtestLogIn folder.
+        /// </summary>
+        [RepositoryFolder("5420c6a4-98f3-4a83-a6ef-1ea496919ddb")]
+        public virtual GitRepositoryFolders.RanorexWebtestLogInAppFolder RanorexWebtestLogIn
+        {
+            get { return _ranorexwebtestlogin; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,150 @@ namespace Git
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     public partial class GitRepositoryFolders
     {
+        /// <summary>
+        /// The RanorexWebtestLogInAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5420c6a4-98f3-4a83-a6ef-1ea496919ddb")]
+        public partial class RanorexWebtestLogInAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _userloginInfo;
+            RepoItemInfo _userpassInfo;
+            RepoItemInfo _wpsubmitInfo;
+            RepoItemInfo _logoutInfo;
+
+            /// <summary>
+            /// Creates a new RanorexWebtestLogIn  folder.
+            /// </summary>
+            public RanorexWebtestLogInAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RanorexWebtestLogIn", "/dom[@domain='webtest.ranorex.org']", parentFolder, 30000, null, false, "5420c6a4-98f3-4a83-a6ef-1ea496919ddb", "")
+            {
+                _userloginInfo = new RepoItemInfo(this, "UserLogin", ".//input[#'user_login']", 30000, null, "9948093a-f7c7-4634-bbfc-c4d07b947e34");
+                _userpassInfo = new RepoItemInfo(this, "UserPass", ".//input[#'user_pass']", 30000, null, "2310ef81-b28a-4e7f-8ccb-3703cfb2c6d5");
+                _wpsubmitInfo = new RepoItemInfo(this, "WpSubmit", ".//input[#'wp-submit']", 30000, null, "55a3c61f-6dc8-4a68-a992-df1c55821f9f");
+                _logoutInfo = new RepoItemInfo(this, "LogOut", ".//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']", 30000, null, "6dde94e3-21ee-41ea-953c-c8dc6cd55498");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5420c6a4-98f3-4a83-a6ef-1ea496919ddb")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5420c6a4-98f3-4a83-a6ef-1ea496919ddb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserLogin item.
+            /// </summary>
+            [RepositoryItem("9948093a-f7c7-4634-bbfc-c4d07b947e34")]
+            public virtual Ranorex.InputTag UserLogin
+            {
+                get
+                {
+                    return _userloginInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserLogin item info.
+            /// </summary>
+            [RepositoryItemInfo("9948093a-f7c7-4634-bbfc-c4d07b947e34")]
+            public virtual RepoItemInfo UserLoginInfo
+            {
+                get
+                {
+                    return _userloginInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserPass item.
+            /// </summary>
+            [RepositoryItem("2310ef81-b28a-4e7f-8ccb-3703cfb2c6d5")]
+            public virtual Ranorex.InputTag UserPass
+            {
+                get
+                {
+                    return _userpassInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserPass item info.
+            /// </summary>
+            [RepositoryItemInfo("2310ef81-b28a-4e7f-8ccb-3703cfb2c6d5")]
+            public virtual RepoItemInfo UserPassInfo
+            {
+                get
+                {
+                    return _userpassInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WpSubmit item.
+            /// </summary>
+            [RepositoryItem("55a3c61f-6dc8-4a68-a992-df1c55821f9f")]
+            public virtual Ranorex.InputTag WpSubmit
+            {
+                get
+                {
+                    return _wpsubmitInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WpSubmit item info.
+            /// </summary>
+            [RepositoryItemInfo("55a3c61f-6dc8-4a68-a992-df1c55821f9f")]
+            public virtual RepoItemInfo WpSubmitInfo
+            {
+                get
+                {
+                    return _wpsubmitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LogOut item.
+            /// </summary>
+            [RepositoryItem("6dde94e3-21ee-41ea-953c-c8dc6cd55498")]
+            public virtual Ranorex.ATag LogOut
+            {
+                get
+                {
+                    return _logoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LogOut item info.
+            /// </summary>
+            [RepositoryItemInfo("6dde94e3-21ee-41ea-953c-c8dc6cd55498")]
+            public virtual RepoItemInfo LogOutInfo
+            {
+                get
+                {
+                    return _logoutInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

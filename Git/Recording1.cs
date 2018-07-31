@@ -79,6 +79,38 @@ namespace Git
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://webtest.ranorex.org/wp-login.php' with browser 'Chrome' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("http://webtest.ranorex.org/wp-login.php", "Chrome", "", false, true, false, false, false);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexWebtestLogIn.UserLogin' at 94;12.", repo.RanorexWebtestLogIn.UserLoginInfo, new RecordItemIndex(1));
+            repo.RanorexWebtestLogIn.UserLogin.Click("94;12");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ranore' with focus on 'RanorexWebtestLogIn.UserLogin'.", repo.RanorexWebtestLogIn.UserLoginInfo, new RecordItemIndex(2));
+            repo.RanorexWebtestLogIn.UserLogin.PressKeys("ranore");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'x webtest' with focus on 'RanorexWebtestLogIn.UserLogin'.", repo.RanorexWebtestLogIn.UserLoginInfo, new RecordItemIndex(3));
+            repo.RanorexWebtestLogIn.UserLogin.PressKeys("x webtest");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexWebtestLogIn.UserPass' at 80;22.", repo.RanorexWebtestLogIn.UserPassInfo, new RecordItemIndex(4));
+            repo.RanorexWebtestLogIn.UserPass.Click("80;22");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ranorex' with focus on 'RanorexWebtestLogIn.UserPass'.", repo.RanorexWebtestLogIn.UserPassInfo, new RecordItemIndex(5));
+            repo.RanorexWebtestLogIn.UserPass.PressKeys("ranorex");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexWebtestLogIn.WpSubmit' at 41;11.", repo.RanorexWebtestLogIn.WpSubmitInfo, new RecordItemIndex(6));
+            repo.RanorexWebtestLogIn.WpSubmit.Click("41;11");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexWebtestLogIn.LogOut' at 42;11.", repo.RanorexWebtestLogIn.LogOutInfo, new RecordItemIndex(7));
+            repo.RanorexWebtestLogIn.LogOut.Click("42;11");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
